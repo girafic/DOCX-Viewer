@@ -1,0 +1,185 @@
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
+}
+ 
+
+  .dropzone, .dropzone * {
+    box-sizing: border-box;
+  }
+  
+  .dropzone {
+    border: 2px dashed var(--black3-opaque);
+    background: var(--white2);
+    padding: 8px 8px;
+    margin: 8px 16px;
+    border-radius: 4px;
+  }
+
+  .dropzone:hover {
+    background: var(--grey);
+  }
+
+  #document {
+    display: none;
+  }
+
+  .dropzone.dz-clickable {
+    cursor: pointer;
+  }
+  .dropzone.dz-clickable * {
+    cursor: default;
+  }
+  .dropzone.dz-clickable .dz-message, .dropzone.dz-clickable .dz-message * {
+    cursor: pointer;
+  }
+  .dropzone.dz-started .dz-message {
+    display: none;
+  }
+  .dropzone.dz-drag-hover {
+    border-style: solid;
+  }
+  .dropzone.dz-drag-hover .dz-message {
+    opacity: 0.5;
+  }
+  .dropzone .dz-message {
+    text-align: center;
+  }
+  .dropzone .dz-message .dz-button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  .dropzone .dz-preview {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin: 16px;
+    min-height: 100px;
+  }
+  .dropzone .dz-preview:hover {
+    z-index: 1000;
+  }
+  .dropzone .dz-preview:hover .dz-details {
+    opacity: 1;
+  }
+  .dropzone .dz-preview.dz-file-preview .dz-image {
+    border-radius: 20px;
+    background: #999;
+    background: linear-gradient(to bottom, #eee, #ddd);
+  }
+  .dropzone .dz-preview.dz-file-preview .dz-details {
+    opacity: 1;
+  }
+ 
+  .dropzone .dz-preview .dz-details .dz-size {
+    margin-bottom: 1em;
+    font-size: 16px;
+  }
+  .dropzone .dz-preview .dz-details .dz-filename {
+    white-space: nowrap;
+  }
+  .dropzone .dz-preview .dz-details .dz-filename:hover span {
+    border: 1px solid rgba(200, 200, 200, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .dropzone .dz-preview .dz-details .dz-filename:not(:hover) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .dropzone .dz-preview .dz-details .dz-filename:not(:hover) span {
+    border: 1px solid transparent;
+  }
+  .dropzone .dz-preview .dz-details .dz-filename span, .dropzone .dz-preview .dz-details .dz-size span {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 0 0.4em;
+    border-radius: 3px;
+  }
+  .dropzone .dz-preview:hover .dz-image img {
+    -webkit-transform: scale(1.05, 1.05);
+    -moz-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+    -webkit-filter: blur(8px);
+    filter: blur(8px);
+  }
+  .dropzone .dz-preview .dz-image {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    display: block;
+    z-index: 10;
+  }
+  .dropzone .dz-preview .dz-image img {
+    display: block;
+  }
+
+.container {
+  margin-top: 57px;
+}
+.well {
+  padding: 16px;
+}
+
+.well img {
+  max-width: 100%;
+}
+
+.well img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.span4 {
+  padding: 16px;
+  display: none;
+}
+
+.fileName {
+  margin-top: var(--size-xsmall);
+  font-size: var(--font-size-small);
+  color: var(--black8-opaque);
+}
+
+.row { display: flex;}
+.row > * { flex: 1; }
+
+.row > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+.bottombar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 41px;
+  text-align: left;
+  background-color: var(--white);
+  margin: 0;
+  padding: 0px 4px 0px 8px;
+  color: #fff;
+  font-size: 11px;
+  border-bottom: 1px solid var(--black1);
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon--save {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE1Ljc1IDE3LjVsLS41My41My41My41My41My0uNTMtLjUzLS41M3ptLTIuOTctNC4wM2EuNzUuNzUgMCAxMC0xLjA2IDEuMDZsMS4wNi0xLjA2em03IDEuMDZhLjc1Ljc1IDAgMTAtMS4wNi0xLjA2bDEuMDYgMS4wNnpNMTYuNSAxMGEuNzUuNzUgMCAwMC0xLjUgMGgxLjV6bS0uMjIgNi45N2wtMy41LTMuNS0xLjA2IDEuMDYgMy41IDMuNSAxLjA2LTEuMDZ6bTAgMS4wNmwzLjUtMy41LTEuMDYtMS4wNi0zLjUgMy41IDEuMDYgMS4wNnpNMTUgMTB2Ny41aDEuNVYxMEgxNXoiIGZpbGw9IiMwMDAiLz48cGF0aCBkPSJNOS4yNSAxOC41djMuMjVoMTNWMTguNSIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+);
+}

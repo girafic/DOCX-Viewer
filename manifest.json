@@ -1,0 +1,7 @@
+{
+  "name": "DOCX Viewer",
+  "id": "943829046375157898",
+  "api": "1.0.0",
+  "main": "dist/code.js",
+  "ui": "dist/ui.html"
+}

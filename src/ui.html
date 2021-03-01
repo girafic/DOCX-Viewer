@@ -1,0 +1,49 @@
+  
+<div class="container">
+  <div id="dropzone" class="dropzone dz-clickable">
+    <input id="document" type="file" />
+      <div class="dz-message">
+        <div class="dz-image">
+          <svg width="72" height="72" viewBox="0 0 126 126" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M39.375 33.4688H69.7217L86.625 50.372V92.5312H39.375V33.4688ZM43.3125 37.4062V88.5938H82.6875V53.1562H66.9375V37.4062H43.3125ZM70.875 40.1905L79.9033 49.2188H70.875V40.1905Z" fill="black"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M61.5741 78.2648V57H64.4248V78.2648L70.5435 72.1458L72.5595 74.1618L62.9995 83.7215L53.4395 74.1618L55.4554 72.1458L61.5741 78.2648Z" fill="black"/>
+          </svg>
+        </div>
+        <button type="button" class="dz-button"><span style="text-decoration: underline;">Choose a DOCX file</span> or <strong>drag it here.</strong></button>
+        <div id="fileName" class="fileName"></div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="span8">
+      <div id="output" class="well"></div>
+    </div>
+    <div class="span4">
+      <h3>Error and warnings</h3>
+      <div id="messages"></div>
+    </div>
+</div>
+<div class="bottombar inline-flex justify-content-between">
+  <div class="align-self-center" style="width: 200px;">
+    <select name="window_size" id="window_size" class="select-menu">
+        <option>Window size</option>
+        <option value="800x500">800x500</option>
+        <option value="500x800">500x800</option>
+        <option value="800x800">800x800</option>
+        <option value="500x500">500x500</option>
+        <option value="360x500">360x500</option>
+        <option value="360x800">360x800</option>
+        <option value="500x360">500x360</option>
+        <option value="360x360">360x360</option>
+        <option value="800xMaxWindow">800xMaxWindow</option>
+    </select>
+  </div>
+  <div class="buttons">
+    <div id="save-docx-file" class="icon-button">
+      <div class="icon icon--save" title="Save .docx file to cache"></div>
+    </div>
+    <div id="clear-cache" class="icon-button">
+      <div class="icon icon--trash" title="Clear cache"></div>
+    </div>
+  </div>
+</div>
